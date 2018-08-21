@@ -40,7 +40,7 @@ def multiply_2(factor):
     :param factor:
     :return: results: int
     """
-    assert type(factor) is not int or type(factor) is not float, "MAMMA MIA!"
+    assert type(factor) is int or type(factor) is float, "MAMMA MIA!"
     # Above example shows that we need that type of variable factor has to either int or float.
     # Otherwise will print out an extra annotation.
 
@@ -51,3 +51,4 @@ def multiply_2(factor):
 
 print(multiply_1(32))
 print(multiply_2(2))
+print(multiply_2("12"))
