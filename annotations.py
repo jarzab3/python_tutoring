@@ -12,7 +12,7 @@ for variables data types. In order to see examples fully working, please update 
 
 # At IDE level. Syntax for Variable Annotations. Specifying data type for an input.
 # Version < 3.6 does not accept a variable annotation.
-def multiply(factor: int):
+def multiply_1(factor: int):
     """
     Example where input argument has specified variable annotation.
     This example is showing how to cast variable. And assert in order to check for any error at the early stage.
@@ -34,7 +34,7 @@ def multiply(factor: int):
 
 # This example present lack of variable annotations. At this stage variable will not be highlighted in case of
 # other data type of variable was provided. However, this examples has extended usage of assert function in python.
-def multiply_1(factor):
+def multiply_2(factor):
     """
     Example without using annotations. Better example of how to use assert.
     :param factor:
@@ -47,3 +47,7 @@ def multiply_1(factor):
     results = factor * factor * factor
 
     return results
+
+
+print(multiply_1(32))
+print(multiply_2(2))
